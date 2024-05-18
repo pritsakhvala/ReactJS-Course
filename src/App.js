@@ -10,6 +10,7 @@ import Classclick from "./Components/Classclick";
 import Eventbind from "./Components/Eventbind";
 import ParentComponent from "./Components/ParentComponent";
 import ConditionalRender from "./Components/ConditionalRender";
+import NameList from "./Components/NameList";
 function App() {
   return (
     <div className="App">
@@ -19,12 +20,13 @@ function App() {
         <p>Hello, Batman</p>
       </Greet>
       <Welcome name="clark" />
-      <Hello name="Diana" /> */}
-      {/* <FunctionClick />
+      <Hello name="Diana" /> 
+      <FunctionClick />
       <Classclick />
-      <Eventbind /> */}
+      <Eventbind />
       <ParentComponent />
-      <ConditionalRender />
+      <ConditionalRender /> */}
+      <NameList />
     </div>
   );
 }
