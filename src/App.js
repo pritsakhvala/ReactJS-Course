@@ -13,9 +13,13 @@ import ConditionalRender from "./Components/ConditionalRender";
 import NameList from "./Components/NameList";
 import StyleSheets from "./Components/StyleSheets";
 import InlineCss from "./Components/InlineCss";
+import "./AppStyles.css";
+import styles from "./AppStyles.module.css";
 function App() {
   return (
     <div className="App">
+      <h1 className="error">Error</h1>
+      <h1 className={styles.success}>Success</h1>
       {/* <Counter />
       <Message />
       <Greet name="bruce">
