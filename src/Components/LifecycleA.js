@@ -17,7 +17,10 @@ class LifecycleA extends Component {
   componentDidMount() {
     console.log("mount lifecycle");
   }
-
+  shouldlComponentUpdate() {
+    console.log("LifecycleA  shouldComponentUpdate");
+    return true;
+  }
   render() {
     console.log("LifecycleA render");
     return (
