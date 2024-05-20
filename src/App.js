@@ -1,13 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
-import FragmentDemo from "./Components/FragmentDemo";
-import Table from "./Components/Table";
-
+import ParentComp from "./Components/ParentComp";
 function App() {
   return (
     <div className="App">
-      <FragmentDemo />
-      <Table />
+      <ParentComp />
     </div>
   );
 }
