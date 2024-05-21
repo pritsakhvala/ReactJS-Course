@@ -4,10 +4,15 @@ class RefsDemo extends Component {
   constructor(props) {
     super(props);
     this.myRef = React.createRef();
+    this.cbRef = null;
+    this.setcbRef = (element) => {
+      this.cbRef = element;
+    };
   }
   componentDidMount() {
-    this.myRef.current.focus();
-    console.log(this.myRef);
+    if (this.cbRef) {
+      this.cbRef.focus();
+    }
   }
   handleEvent = () => {
     alert(this.myRef.current.value);
@@ -15,7 +20,7 @@ class RefsDemo extends Component {
   render() {
     return (
       <div>
-        <input type="text" ref={this.myRef} />
+        <input type="text" ref={this.setcbRef} />
         <button onClick={this.handleEvent}>submit</button>
       </div>
     );
