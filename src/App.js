@@ -1,12 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
-import ClickCount from "./Components/ClickCount";
-import HoverCount from "./Components/HoverCount";
+import ClickCounterTwo from "./Components/ClickCounterTwo";
+import HoverCounterTwo from "./Components/HoverCounterTwo";
 function App() {
   return (
     <div className="App">
-      <ClickCount name="ok" />
-      <HoverCount />
+      <ClickCounterTwo />
+      <HoverCounterTwo />
     </div>
   );
 }
