@@ -5,7 +5,7 @@ import HoverCount from "./Components/HoverCount";
 function App() {
   return (
     <div className="App">
-      <ClickCount />
+      <ClickCount name="ok" />
       <HoverCount />
     </div>
   );

@@ -5,10 +5,12 @@ class ClickCount extends Component {
     const { count, incrementCount } = this.props;
     return (
       <div>
-        <button onClick={incrementCount}>click {count} times</button>
+        <button onClick={incrementCount}>
+          {this.props.name} click {count} times
+        </button>
       </div>
     );
   }
 }
 
-export default UpdatedComponent(ClickCount);
+export default UpdatedComponent(ClickCount, 5);
