@@ -6,7 +6,7 @@ class RefsDemo extends Component {
     this.myRef = React.createRef();
   }
   componentDidMount() {
-    this.myRef.current.focus;
+    this.myRef.current.focus();
     console.log(this.myRef);
   }
   handleEvent = () => {
