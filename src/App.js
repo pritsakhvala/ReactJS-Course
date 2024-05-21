@@ -1,10 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
-import FocusInput from "./Components/FocusInput";
+import FRParentInput from "./Components/FRParentInput";
 function App() {
   return (
     <div className="App">
-      <FocusInput />
+      <FRParentInput />
     </div>
   );
 }
